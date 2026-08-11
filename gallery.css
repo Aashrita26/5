@@ -22,8 +22,8 @@ body{
 		width:10%;
 		margin-left:17%;
     border: 10px solid black;
+	opacity: 0.3
 }
 img{
 		width:95%;
-		opacity: 0.3
 }
