@@ -1,4 +1,10 @@
-
+function addTabIndex() {
+let images = document.querySelectorAll(".preview");
+for(let i = 0; i < images.length; i++) {
+images[i].setAttribute("tabindex", "0");
+}
+}
+window.onload = addTabIndex;
 function upDate(previewPic) {
 let imageDiv = document.getElementById("image");
 
