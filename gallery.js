@@ -1,17 +1,26 @@
 function addTabIndex() {
-let images = document.querySelectorAll(".preview");
-for(let i = 0; i < images.length; i++) {
-images[i].setAttribute("tabindex", "0");
+    let images = document.querySelectorAll(".preview");
+
+    for(let i = 0; i < images.length; i++) {
+        images[i].setAttribute("tabindex", "0");
+    }
 }
-}
+
 window.onload = addTabIndex;
+
 function upDate(previewPic) {
-let imageDiv = document.getElementById("image");
-imageDiv.style.backgroundImage = `url('${previewPic.src}')`;
-imageDiv.innerHTML = previewPic.alt;
+    let imageDiv = document.getElementById("image");
+
+    imageDiv.style.backgroundImage = `url('${previewPic.src}')`;
+
+    imageDiv.innerHTML = previewPic.alt;
 }
+
 function unDo() {
-let imageDiv = document.getElementById("image");
-imageDiv.style.backgroundImage = "";
-imageDiv.innerHTML = "Hover over an image below to display here.";
+    let imageDiv = document.getElementById("image");
+
+    imageDiv.style.backgroundImage = "";
+
+    imageDiv.innerHTML = "Hover over an image below to display here.";
 }
+`
